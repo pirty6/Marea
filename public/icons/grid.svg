@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__grid" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="prefix__Grupo_8" data-name="Grupo 8">
+        <g id="prefix__Grupo_7" data-name="Grupo 7">
+            <g id="prefix__Grupo_6" data-name="Grupo 6">
+                <path id="prefix__Rectángulo_1" d="M0 0H5.375V5.375H0z" class="prefix__cls-1" data-name="Rectángulo 1" transform="translate(7.313 7.313)"/>
+                <path id="prefix__Rectángulo_2" d="M0 0H5.375V5.375H0z" class="prefix__cls-1" data-name="Rectángulo 2"/>
+                <path id="prefix__Rectángulo_3" d="M0 0H5.375V5.375H0z" class="prefix__cls-1" data-name="Rectángulo 3" transform="translate(7.313 14.625)"/>
+                <path id="prefix__Rectángulo_4" d="M0 0H5.375V5.375H0z" class="prefix__cls-1" data-name="Rectángulo 4" transform="translate(0 7.313)"/>
+                <path id="prefix__Rectángulo_5" d="M0 0H5.375V5.375H0z" class="prefix__cls-1" data-name="Rectángulo 5" transform="translate(0 14.625)"/>
+                <path id="prefix__Rectángulo_6" d="M0 0H5.375V5.375H0z" class="prefix__cls-1" data-name="Rectángulo 6" transform="translate(14.625)"/>
+                <path id="prefix__Rectángulo_7" d="M0 0H5.375V5.375H0z" class="prefix__cls-1" data-name="Rectángulo 7" transform="translate(7.313)"/>
+                <path id="prefix__Rectángulo_8" d="M0 0H5.375V5.375H0z" class="prefix__cls-1" data-name="Rectángulo 8" transform="translate(14.625 7.313)"/>
+                <path id="prefix__Rectángulo_9" d="M0 0H5.375V5.375H0z" class="prefix__cls-1" data-name="Rectángulo 9" transform="translate(14.625 14.625)"/>
+            </g>
+        </g>
+    </g>
+</svg>
