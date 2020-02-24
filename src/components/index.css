@@ -1,13 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+  font-family: 'Montserrat' !important;
+}
+
 body {
   margin: 0;
   background-color: #151515;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
   padding: 20px;
 }
 
 .hero {
   height: calc(100vh - 20px);
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+}
+
+p {
+  font-size:1.2rem;
+  line-height: 1.8rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .wave {
@@ -48,10 +80,27 @@ body {
 }
 
 .item {
-  padding: 20px;
+  padding-top: 20px;
 }
 
 @keyframes drift {
   from { transform: rotate(0deg); }
   from { transform: rotate(360deg); }
+}
+
+button {
+  background-color: #80a0e0;
+  border-radius: 50px;
+  padding: 10px 40px;
+  border:none;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#mas {
+  padding-bottom: 1px;
+  border-bottom: 1px solid #fff;
+  line-height: 30px;
 }
