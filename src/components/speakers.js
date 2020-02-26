@@ -83,7 +83,7 @@ class Speakers extends Component {
         </div>
         {this.state.show ?
           <div style={{display:`flex`, paddingTop:`4rem`}}>
-            <img src={this.spks[this.state.id].image} style={{cursor:`pointer`, flex:`1 1 auto`}} onClick={() => this.close()} />
+            <img alt={this.spks[this.state.id].name} src={this.spks[this.state.id].image} style={{cursor:`pointer`, flex:`1 1 auto`}} onClick={() => this.close()} />
             <div style={{alignSelf:`center`, flex:`1 1 auto`, paddingLeft:`4rem`}}>
               <h2 style={{marginBottom:`5px`}}>{this.spks[this.state.id].name}</h2>
               <h3 style={{fontWeight:`400`, fontSize:`2.5rem`, paddingTop:`0px`}}>{this.spks[this.state.id].schedule}</h3>

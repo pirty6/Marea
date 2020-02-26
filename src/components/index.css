@@ -104,3 +104,18 @@ button {
   border-bottom: 1px solid #fff;
   line-height: 30px;
 }
+
+
+.project:nth-child(even) {
+  display:flex;
+  justify-content: flex-start;
+}
+
+.project:nth-child(odd) {
+  display:flex;
+  justify-content: flex-end;
+}
+
+.project:nth-child(n+2) {
+  margin-top: -20rem;
+}

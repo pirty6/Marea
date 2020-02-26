@@ -15,6 +15,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `react-scroll-parallax`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

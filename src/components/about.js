@@ -1,13 +1,10 @@
 import React, { Component } from "react"
 
 class About extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
-      <div style={{height:`100vh`, display:`flex`, flexDirection:`column`,
-      justifyContent:`center`, padding:`0px 20px`}}>
+      <div style={{minHeight:`100vh`, display:`flex`, flexDirection:`column`,
+      justifyContent:`center`, padding:`20px`}}>
         <div style={{display:`flex`, width:`100%`, justifyContent:`flex-end`}}>
           <h1 style={{flex:`1`, display:`flex`, justifyContent:`flex-end`}}>01</h1>
           <div style={{flex:`2`}}>
