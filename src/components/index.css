@@ -33,6 +33,11 @@ h4 {
   font-weight: 500;
 }
 
+h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
 p {
   font-size:1.2rem;
   line-height: 1.8rem;
@@ -97,6 +102,25 @@ button {
   font-size: 0.8rem;
   font-weight: bold;
   cursor: pointer;
+}
+
+label {
+  display:flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+input, textarea {
+  color: #fff;
+  border-radius: 20px;
+  border: solid 1px #707070;
+  background-color: #1b1b1b;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+input:placeholder, textarea:placeholder {
+  color: #a0a0a0;
 }
 
 #mas {

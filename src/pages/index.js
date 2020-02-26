@@ -7,6 +7,7 @@ import NavBar from "../components/navbar"
 import About from "../components/about"
 import Speakers from "../components/speakers"
 import Projects from "../components/projects"
+import Contact from "../components/contact"
 
 import "../components/index.css"
 
@@ -21,6 +22,7 @@ class IndexPage extends Component {
         <Speakers
         title="Ponentes"/>
         <Projects />
+        <Contact />
       </ParallaxProvider>
     )
   }
