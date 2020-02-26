@@ -10,8 +10,9 @@ const Contact = () => (
           </div>
         </div>
       </div>
-      <div style={{paddingTop:`3rem`, display:`flex`, width:`100%`, justifyContent:`center`}}>
-        <div style={{maxWidth:`70vw`, alignItems:`flex-start`, display:`flex`, flexDirection:`column`}}>
+      <div style={{paddingTop:`3rem`, display:`flex`, width:`100%`}}>
+      <div style={{flex:`1`}}/>
+        <div style={{flex:`3`, alignItems:`flex-start`, display:`flex`, flexDirection:`column`}}>
           <h5>Este es un proyecto de todxs. ¡Escríbenos! Nos encantaría colaborar</h5>
           <div style={{width:`100%`}}>
             <form action="https://getform.io/f/0eb76128-e317-4f0e-a339-8b97971d78d6" method="POST"
@@ -33,6 +34,10 @@ const Contact = () => (
               </div>
             </form>
           </div>
+        </div>
+        <div style={{flex:`1`, display:`flex`, flexDirection:`column`, alignItems:`center`}}>
+          <img style={{height:`48px`, width:`48px`, cursor:`pointer`}} src="./icons/facebook.svg" alt='facebook'/>
+          <img style={{height:`48px`, width:`48px`, cursor:`pointer`}} src="./icons/instagram.svg" alt='instagram' />
         </div>
       </div>
       <div style={{display:`flex`, width:`100%`, justifyContent:`flex-end`, paddingTop:`3rem`}}>
