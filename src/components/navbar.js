@@ -25,7 +25,7 @@ class NavBar extends Component {
         </div>
         <div className='item right'>
         <button onClick={() => this.toggle()} style={{padding:`0`, backgroundColor:`transparent`}}>
-          <img style={{margin:`0`}} src="/icons/grid.svg" alt='menu' style={{cursor:`pointer`}}/>
+          <img id='icon' style={{margin:`0`, cursor:`pointer`}} src="/icons/grid.svg" alt='menu'/>
         </button>
         </div>
         {this.state.showMenu ? <div style={{position:`fixed`, backgroundColor: `#1b1b1b`,

@@ -143,3 +143,53 @@ input:placeholder, textarea:placeholder {
 .project:nth-child(n+2) {
   margin-top: -20rem;
 }
+
+.cls-1{fill:#d5182f;}
+.cls-2{fill:#3265cc;}
+.cls-3{fill:#73438a;}
+
+#no-move {
+  transform: translateX(calc(50vw - 500px));
+}
+
+#move {
+  transform: translate(0);
+  transition: all ease 1000ms;
+}
+
+#area-no-show {
+  transform: translateX(-400px);
+  opacity: 0;
+}
+
+#area-show {
+  animation-name: fade-in-left;
+  animation-duration: 700ms;
+  transition: all ease 800ms;
+}
+
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#nueva-ola-no-show {
+  display: none;
+  transform: translateY(-100px);
+}
+
+#nueva-ola-show {
+  transform: translateY(0);
+  transition: all ease 800ms;
+}
+
+
+#icon {
+  margin-bottom: 0 !important;
+}
