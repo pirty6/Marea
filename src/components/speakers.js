@@ -6,25 +6,25 @@ class Speakers extends Component {
     super(props);
     this.spks = {}
     this.spks[1] = {
-      "name": "Andrea Medina Rosas",
-      "text": "Abogada, feminista y defensora de los derechos humanos. Ha participado en diversos procesos legales a favor de los derechos de las mujeres. De igual forma, ha impartido talleres sobre derecho con perspectiva de género a operadores de justicia en México. El año pasado fue ponente del Diálogo de Violencias de Género en la Feria Internacional del Libro en Guadalajara, y además recibió la Medalla al Mérito Hermila Galindo.",
-      "schedule": " Apertura 10:00 - 11:00",
-      "link": "http://congresos.juridicas.unam.mx/buenas-practicas-genero-dh/participantes#",
-      "image": "./images/Imagen6.jpg"
+      "name": "Alondra Jímenez",
+      "text": "Licenciada en Ciencias y Técnicas de la Comunicación. Fue reportera de espectáculos y cultura en Querétaro con publicaciones en el Diario de Querétaro. Además, cuenta con formación como cineasta por parte del Centro Nacional de las Artes (CENART) y el Instituto Mexicano de Cinematografía (IMCINE). En el 2017 presentó un proyecto en el Festival Itinerante de Cine Documental AMBULANTE. Desde el 2017 se desempeña como coordinadora de producción audiovisual en DOQUMENTA.",
+      "schedule": "Díalogo con Mujeres en Distintas Disciplinas 10:00 - 11:00",
+      "link": "https://www.linkedin.com/in/alondra-jim%C3%A9nez-estrada-18207b179/",
+      "image": "./images/AlondraJimenez.jpg"
     }
     this.spks[2] = {
-      "name": "Andrea Medina Rosas",
-      "text": "Abogada, feminista y defensora de los derechos humanos. Ha participado en diversos procesos legales a favor de los derechos de las mujeres. De igual forma, ha impartido talleres sobre derecho con perspectiva de género a operadores de justicia en México. El año pasado fue ponente del Diálogo de Violencias de Género en la Feria Internacional del Libro en Guadalajara, y además recibió la Medalla al Mérito Hermila Galindo.",
-      "schedule": "10:00 - 11:00",
-      "link": "http://congresos.juridicas.unam.mx/buenas-practicas-genero-dh/participantes#",
-      "image": "./images/Imagen7.jpg"
+      "name": "Lucia Martín López",
+      "text": "Arquitecta, docente e investigadora que centra su trabajo en la vivienda. Estudió en la Universidad Politécnica de Madrid con mención internacional cum laude y Premio extraordinario de Doctorado. Fue coordinadora del Centro de Investigación en Arquitectura de la Universidad Anáhuac en México. En el 2018 fue seleccionada para exponer en el Pabellón de España de la 16º Bienal de Arquitectura de Venecia. Además, ha publicado en revistas de diversos países. Actualmente es docente del Tecnológico de Monterrey.",
+      "schedule": "Díalogo con Mujeres en Distintas Disciplinas 10:00 - 11:00",
+      "link": "http://www.luciamartinlopez.com/",
+      "image": "./images/LuciaMartin.JPG"
     }
     this.spks[3] = {
-      "name": "Andrea Medina Rosas",
-      "text": "Abogada, feminista y defensora de los derechos humanos. Ha participado en diversos procesos legales a favor de los derechos de las mujeres. De igual forma, ha impartido talleres sobre derecho con perspectiva de género a operadores de justicia en México. El año pasado fue ponente del Diálogo de Violencias de Género en la Feria Internacional del Libro en Guadalajara, y además recibió la Medalla al Mérito Hermila Galindo.",
-      "schedule": "10:00 - 11:00",
-      "link": "http://congresos.juridicas.unam.mx/buenas-practicas-genero-dh/participantes#",
-      "image": "./images/Imagen9.jpg"
+      "name": "Tania Hernández",
+      "text": "Cineasta. Estudió una licenciatura de Cine en Centro de Diseño, Cine y TV (Ciudad de México), así como un posgrado en Edición y un Master en Documental de Creación, ambos en la Universidad Pompeu Fabra (Barcelona). Ha sido becada como directora bajo el programa Borderline, Fest Associaçao Cultural, Espinho, Portugal (2012) y en Interaction Documentary Camp en Pozega, Serbia (2013). TITIXE, su primer largometraje documental, ha recogido premios y menciones en varios festivales internacionales de cine.",
+      "schedule": "Proyección del Documental 10:00 - 11:00",
+      "link": "https://www.taniahernandezvelas.co/TITIXE",
+      "image": "./images/TaniaHernandez.JPG"
     }
     this.spks[4] = {
       "name": "Andrea Medina Rosas",
@@ -83,7 +83,9 @@ class Speakers extends Component {
         </div>
         {this.state.show ?
           <div style={{display:`flex`, paddingTop:`4rem`}}>
-            <img alt={this.spks[this.state.id].name} src={this.spks[this.state.id].image} style={{cursor:`pointer`, flex:`1 1 auto`}} onClick={() => this.close()} />
+            <img alt={this.spks[this.state.id].name} src={this.spks[this.state.id].image}
+            style={{cursor:`pointer`, flex:`1 1 auto`, maxWidth:`40vw`}} 
+            onClick={() => this.close()} />
             <div style={{alignSelf:`center`, flex:`1 1 auto`, paddingLeft:`4rem`}}>
               <h2 style={{marginBottom:`5px`}}>{this.spks[this.state.id].name}</h2>
               <h3 style={{fontWeight:`400`, fontSize:`2.5rem`, paddingTop:`0px`}}>{this.spks[this.state.id].schedule}</h3>

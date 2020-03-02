@@ -2,18 +2,17 @@ import React, { Component } from "react"
 import { ParallaxProvider } from 'react-scroll-parallax';
 // import { Link } from "gatsby"
 
-import Loader from "../components/loader"
 import Hero from "../components/hero"
 import NavBar from "../components/navbar"
 import About from "../components/about"
 import Speakers from "../components/speakers"
-import Projects from "../components/projects"
 import Contact from "../components/contact"
+import Contributors from "../components/contributors"
 
 import "../components/index.css"
 
 class IndexPage extends Component {
-  state = {loading:true, show: false}
+  state = {loading:true}
   sleep = milliseconds => {
     return new Promise(resolve => setTimeout(resolve, milliseconds));
   };
@@ -24,31 +23,26 @@ class IndexPage extends Component {
     });
   };
 
-  display = async (milliseconds = 3990) => {
-    await this.sleep(milliseconds);
-    this.setState({
-      show:true
-    });
-  };
-
   componentDidMount() {
     this.wait(4000);
-    this.display();
-
   }
 
   render() {
+    if(this.state.loading) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
     return (
       <ParallaxProvider>
         <NavBar/>
-        {this.state.loading ? <Loader/> : null}
         <Hero {...this.state}/>
         <About
         title="Acerca de"/>
         <Speakers
         title="Ponentes"/>
-        <Projects />
         <Contact />
+        <Contributors />
       </ParallaxProvider>
     )
   }

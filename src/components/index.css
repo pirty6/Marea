@@ -189,7 +189,20 @@ input:placeholder, textarea:placeholder {
   transition: all ease 800ms;
 }
 
-
 #icon {
   margin-bottom: 0 !important;
+}
+
+.no-scroll {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.contributor {
+  max-width: 25%;
+}
+
+.contributor:nth-child(n+5) {
+  margin-top: -8rem;
 }

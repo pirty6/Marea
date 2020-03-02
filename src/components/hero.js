@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import Logo from "./logo"
 //import PropTypes from "prop-types"
 
 class Hero extends Component {
@@ -19,9 +20,7 @@ class Hero extends Component {
       <div style={{height:`100%`, display:`flex`, flexFlow:`column`}}>
       <div style={{display:`flex`, justifyContent:`center`,
         alignItems:`center`, flex: `1 1 auto`}}>
-        {this.props.show ? <img style={{height: `20.4vh`}} src='/icons/marea-logo.svg' alt='marea' />
-        : null
-        }
+        <Logo />
         </div>
         </div>
         </div>

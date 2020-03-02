@@ -16,8 +16,9 @@ class Logo extends Component {
         this.setState({
           tg: !this.state.tg,
           countTotal: this.state.countTotal + 1
-        })
+        });
       }
+      console.log(this.state.count);
     }
   }
 
@@ -28,7 +29,6 @@ class Logo extends Component {
 
 
   wait = async () => {
-    // this.toggle();
     await this.sleep(1000);
     this.setState({
       moveM: true
@@ -44,6 +44,7 @@ class Logo extends Component {
   };
 
   componentDidMount() {
+    // this.toggle();
     this.wait();
   }
 

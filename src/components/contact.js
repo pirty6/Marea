@@ -1,9 +1,9 @@
 import React from "react"
 
 const Contact = () => (
-    <div>
-      <div style={{display:`flex`, width:`100%`, justifyContent:`flex-end`, paddingTop:`3rem`}}>
-        <h1 style={{flex:`1`, display:`flex`, justifyContent:`flex-end`}}>06</h1>
+    <div style={{height:`calc(100vh - 3rem)`, display:`flex`, flexDirection:`column`, justifyContent:`center`}}>
+      <div style={{display:`flex`, width:`100%`, justifyContent:`flex-end`}}>
+        <h1 style={{flex:`1`, display:`flex`, justifyContent:`flex-end`}}>04</h1>
         <div style={{flex:`3`}}>
           <div style={{width:`100%`, borderBottom:`2px solid #fff`}}>
             <h1>&nbsp;Contacto</h1>
@@ -15,7 +15,7 @@ const Contact = () => (
         <div style={{flex:`3`, alignItems:`flex-start`, display:`flex`, flexDirection:`column`}}>
           <h5>Este es un proyecto de todxs. ¡Escríbenos! Nos encantaría colaborar</h5>
           <div style={{width:`100%`}}>
-            <form action="https://getform.io/f/0eb76128-e317-4f0e-a339-8b97971d78d6" method="POST"
+            <form action="https://getform.io/f/9e6a5e97-61ac-4d0f-b088-4290cb5bc436" method="POST"
             style={{display:`flex`, flexDirection:`column`}}>
               <label>
                 Nombre
@@ -36,16 +36,12 @@ const Contact = () => (
           </div>
         </div>
         <div style={{flex:`1`, display:`flex`, flexDirection:`column`, alignItems:`center`}}>
-          <img style={{height:`48px`, width:`48px`, cursor:`pointer`}} src="./icons/facebook.svg" alt='facebook'/>
-          <img style={{height:`48px`, width:`48px`, cursor:`pointer`}} src="./icons/instagram.svg" alt='instagram' />
-        </div>
-      </div>
-      <div style={{display:`flex`, width:`100%`, justifyContent:`flex-end`, paddingTop:`3rem`}}>
-        <div style={{flex:`1`, display:`flex`, justifyContent:`flex-end`}} />
-        <div style={{flex:`3`}}>
-          <div style={{width:`100%`, borderBottom:`2px solid #fff`}}>
-          </div>
-          <p style={{marginTop:`1.5rem`}}>Marea © 2020 </p>
+          <a target="_blank" href="https://www.facebook.com/marealanuevaola/">
+            <img style={{height:`48px`, width:`48px`, cursor:`pointer`}} src="./icons/facebook.svg" alt='facebook'/>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/marealanuevaola/">
+            <img style={{height:`48px`, width:`48px`, cursor:`pointer`}} src="./icons/instagram.svg" alt='instagram' />
+          </a>
         </div>
       </div>
     </div>
