@@ -203,6 +203,6 @@ input:placeholder, textarea:placeholder {
   max-width: 25%;
 }
 
-.contributor:nth-child(n+5) {
-  margin-top: -8rem;
+img {
+    image-orientation: from-image;
 }

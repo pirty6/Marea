@@ -29,9 +29,9 @@ class Speakers extends Component {
     this.spks[4] = {
       "name": "Andrea Medina Rosas",
       "text": "Abogada, feminista y defensora de los derechos humanos. Ha participado en diversos procesos legales a favor de los derechos de las mujeres. De igual forma, ha impartido talleres sobre derecho con perspectiva de género a operadores de justicia en México. El año pasado fue ponente del Diálogo de Violencias de Género en la Feria Internacional del Libro en Guadalajara, y además recibió la Medalla al Mérito Hermila Galindo.",
-      "schedule": "10:00 - 11:00",
+      "schedule": "Apertura 10:00 - 11:00",
       "link": "http://congresos.juridicas.unam.mx/buenas-practicas-genero-dh/participantes#",
-      "image": "./images/Imagen8.jpg"
+      "image": "./images/AndreaMedina.JPG"
     }
     this.spks[5] = {
       "name": "Andrea Medina Rosas",
@@ -84,7 +84,7 @@ class Speakers extends Component {
         {this.state.show ?
           <div style={{display:`flex`, paddingTop:`4rem`}}>
             <img alt={this.spks[this.state.id].name} src={this.spks[this.state.id].image}
-            style={{cursor:`pointer`, flex:`1 1 auto`, maxWidth:`40vw`}} 
+            style={{cursor:`pointer`, flex:`1 1 auto`, maxWidth:`40vw`}}
             onClick={() => this.close()} />
             <div style={{alignSelf:`center`, flex:`1 1 auto`, paddingLeft:`4rem`}}>
               <h2 style={{marginBottom:`5px`}}>{this.spks[this.state.id].name}</h2>
@@ -92,8 +92,14 @@ class Speakers extends Component {
               <div style={{width:`55%`, paddingTop:`20px`}}>
                 <p>{this.spks[this.state.id].text}</p>
                 <div style={{display:`flex`, width:`50%`, justifyContent:`space-between`, alignItems:`center`, paddingTop:`20px`}}>
-                  <button>Regístrate</button>
-                  <h6 id="mas" style={{marginBlockEnd: `0`}}>Conoce más</h6>
+                  <a href="https://www.eventbrite.com.mx/e/marea-la-nueva-ola-tickets-96982470179" rel="noopener noreferrer" target="_blank">
+                    <button id="eventbrite-widget-modal-trigger-96982470179">Regístrate</button>
+                  </a>
+                  <h6 id="mas" style={{marginBlockEnd: `0`}}>
+                    <a href={this.spks[this.state.id].link} target="_blank" style={{textDecoration:`none`, color:`#fff`}}>
+                      Conoce más
+                    </a>
+                  </h6>
                 </div>
               </div>
             </div>

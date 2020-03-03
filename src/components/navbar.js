@@ -39,12 +39,15 @@ class NavBar extends Component {
               <h2>Programa</h2>
               <h2>Ponentes</h2>
               <h2>Contribuyentes</h2>
-              <h2>Proyectos</h2>
             </div>
             <div style={{flex:`1 1 auto`}}>
               <p>Sociales</p>
-              <h4>Facebook</h4>
-              <h4>Instagram</h4>
+              <a target="_blank" href="https://www.facebook.com/marealanuevaola/" style={{color:`#fff`, textDecoration:`none`}}>
+                <h4>Facebook</h4>
+              </a>
+              <a target="_blank" href="https://www.instagram.com/marealanuevaola/" style={{color:`#fff`, textDecoration:`none`}}>
+                <h4>Instagram</h4>
+              </a>
               <h4>Contacto</h4>
             </div>
           </div>
