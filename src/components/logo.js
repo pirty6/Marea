@@ -58,6 +58,7 @@ class Logo extends Component {
       x="0px"
       y="0px"
       viewBox="0 0 1346.93 468.03"
+      className="svg-logo"
       style={{enableBackground:`new 0 0 1346.93 468.03`, height: `20.4vh`, marginTop:`-5px`, marginLeft:`-1px`}}
       xmlnsxlinkpace="preserve">
         <g id="logo" dataname="Layer 1">

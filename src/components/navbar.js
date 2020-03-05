@@ -18,7 +18,7 @@ class NavBar extends Component {
     return (
       <div style={{display: `flex`, justifyContent:`space-between`,
         flex:`0 1 auto`, position:`fixed`, width: 'calc(100vw - 60px)',
-        zIndex:`2`}}>
+        zIndex:`2`}} className="navbar">
         <div className='item left'>
         <p>
         </p>

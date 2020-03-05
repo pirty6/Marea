@@ -1,7 +1,8 @@
 import React from "react"
 
 const Contact = () => (
-    <div style={{height:`calc(100vh - 3rem)`, display:`flex`, flexDirection:`column`, justifyContent:`center`}}>
+    <div style={{paddingTop:`0rem`, display:`flex`, flexDirection:`column`, justifyContent:`center`}}
+    className="contact-container">
       <div style={{display:`flex`, width:`100%`, justifyContent:`flex-end`}}>
         <h1 style={{flex:`1`, display:`flex`, justifyContent:`flex-end`}}>04</h1>
         <div style={{flex:`3`}}>
@@ -10,7 +11,7 @@ const Contact = () => (
           </div>
         </div>
       </div>
-      <div style={{paddingTop:`3rem`, display:`flex`, width:`100%`}}>
+      <div style={{paddingTop:`3rem`, display:`flex`, width:`100%`}} className="contact">
       <div style={{flex:`1`}}/>
         <div style={{flex:`3`, alignItems:`flex-start`, display:`flex`, flexDirection:`column`}}>
           <h5>Este es un proyecto de todxs. ¡Escríbenos! Nos encantaría colaborar</h5>
@@ -35,7 +36,7 @@ const Contact = () => (
             </form>
           </div>
         </div>
-        <div style={{flex:`1`, display:`flex`, flexDirection:`column`, alignItems:`center`}}>
+        <div style={{flex:`1`, display:`flex`, flexDirection:`column`, alignItems:`center`}} className="social">
           <a target="_blank" href="https://www.facebook.com/marealanuevaola/">
             <img style={{height:`48px`, width:`48px`, cursor:`pointer`}} src="./icons/facebook.svg" alt='facebook'/>
           </a>

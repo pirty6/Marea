@@ -8,6 +8,7 @@ import About from "../components/about"
 import Speakers from "../components/speakers"
 import Contact from "../components/contact"
 import Contributors from "../components/contributors"
+import Schedule from "../components/schedule"
 
 import "../components/index.css"
 
@@ -28,17 +29,13 @@ class IndexPage extends Component {
   }
 
   render() {
-    if(this.state.loading) {
-      document.body.classList.add("no-scroll");
-    } else {
-      document.body.classList.remove("no-scroll");
-    }
     return (
       <ParallaxProvider>
         <NavBar/>
         <Hero {...this.state}/>
         <About
         title="Acerca de"/>
+        <Schedule />
         <Speakers
         title="Ponentes"/>
         <Contact />

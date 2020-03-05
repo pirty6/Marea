@@ -2,7 +2,7 @@ import React from "react"
 
 const Contributors = () => (
   <div>
-    <div style={{display:`flex`, width:`100%`, justifyContent:`flex-end`, paddingTop:`3rem`}}>
+    <div style={{display:`flex`, width:`100%`, justifyContent:`flex-end`, paddingTop:`8rem`}}>
       <h1 style={{flex:`1`, display:`flex`, justifyContent:`flex-end`}}>05</h1>
       <div style={{flex:`2`}}>
         <div style={{width:`100%`, borderBottom:`2px solid #fff`}}>

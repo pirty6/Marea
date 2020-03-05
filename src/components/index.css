@@ -203,6 +203,291 @@ input:placeholder, textarea:placeholder {
   max-width: 25%;
 }
 
-img {
-    image-orientation: from-image;
+#date {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#day {
+  font-size: 15rem;
+  text-shadow: -5px 0 #d5182f, 0 5px #d5182f, 5px 0 #d5182f, 0 -5px #d5182f;
+  color: #151515;
+}
+
+#month {
+  font-size: 15rem;
+  text-shadow: -5px 0 #3265cc, 0 5px #3265cc, 5px 0 #3265cc, 0 -5px #3265cc;
+  color: #151515;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  min-height: 8vh;
+}
+
+.hour {
+  flex:1;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.line {
+  flex:8;
+  border-bottom: 1px solid #fff;
+  background-color: #1b1b1b;
+}
+
+.line-bubble {
+  width: 7px;
+  height: 100%;
+}
+
+.blue-line {
+  background-color: #3265cc;
+}
+
+.red-line {
+  background-color: #d5182f;
+}
+
+.purple-line {
+  background-color: #73438a;
+}
+
+.blue-title {
+  color: #3265cc;
+}
+
+.title-container {
+  width: 60%;
+  margin-top: 20px;
+}
+
+.bubble {
+  width:27vw;
+  display: flex;
+  border-radius: 0px 20px 20px 0px;
+  position:absolute;
+  margin-left: 12vw;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.bubble-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.title-container > h4 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.title-container > p {
+  font-size: 0.8rem;
+  margin-top: -24px;
+}
+
+.last {
+  flex: 8;
+  background-color: #1b1b1b;
+}
+
+.blue {
+  background-color: #80a0e0;
+  height: 76vh;
+}
+
+.purple {
+  background-color: #b58ec8;
+}
+
+.red {
+  background-color: #ed6273;
+}
+
+#apertura {
+  margin-left: 41vw;
+  height: 2vh;
+}
+
+#Contracorriente {
+  margin-left: 41vw;
+  margin-top: 33px;
+  height: 9vh;
+}
+
+#desembocaduras {
+  margin-left: 41vw;
+  margin-top: calc(9vh + 38px);
+  height: 15vh;
+}
+
+#rio {
+  margin-left: 41vw;
+  margin-top: calc(2*9vh + 2*38px + 25px);
+  height: 11.3vh;
+}
+
+#tsunami {
+  margin-left: 41vw;
+  margin-top: calc(3*9vh + 3*38px + 15px);
+  height: 19vh;
+}
+
+#temporal {
+  margin-left: 41vw;
+  margin-top: calc(4*9vh + 4*38px + 80px);
+  height: 11.8vh;
+}
+
+#cierre {
+  margin-left: 41vw;
+  margin-top: calc(5*9vh + 5*38px + 75px);
+  height: 5vh;
+}
+
+#cierre > * .title-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px !important;
+  justify-content: space-between;
+  width: 60%;
+}
+
+#cierre > * h4 {
+  margin-top: -17px;
+}
+
+#cierre > * p {
+  margin-bottom: 0px !important;
+}
+
+#apertura > * p {
+  margin-top: 10px;
+}
+
+#rompeolas {
+  margin-left: 70vw;
+  margin-top: calc(9vh + 38px);
+  height: 15vh;
+}
+
+#navegando {
+  margin-left: 70vw;
+  margin-top: calc(4*9vh + 4*38px + 80px);
+  height: 11.8vh;
+}
+
+.close {
+  height: 200vh;
+}
+
+.open {
+  height: 170vh;
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .wave {
+    width: 600px;
+    height: 600px;
+    margin-left: -300px;
+    margin-top: -100px;
+  }
+
+  #no-move {
+    transform: translateX(calc(100vw + 150px));
+  }
+
+  .svg-logo {
+    max-width: 300px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .about-container {
+    padding-top: 5rem !important;
+  }
+
+  .about-content {
+    max-width: 100% !important;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+
+  .about-right {
+    flex:5 !important;
+  }
+
+  .about-left {
+    justify-content: flex-start !important;
+  }
+
+  .navbar {
+    width: calc(100vw - 30px) !important;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  .box {
+    margin: -10px !important;
+  }
+
+  .item {
+    padding-top: 10 !important;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+
+  .contact {
+    flex-direction: column;
+    width: 90% !important;
+    align-self: center;
+  }
+
+  .social {
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    margin-top: 3rem;
+    margin-bottom: 8rem;
+  }
+
+  .contact-container {
+    margin-top: 5rem !important;
+  }
+
+  .speaker {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .speaker-img {
+    max-width: 80vw !important;
+  }
+
+  .speakers {
+    height: 75vh !important;
+  }
 }

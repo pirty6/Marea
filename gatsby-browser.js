@@ -5,3 +5,8 @@
  */
 
 // You can delete this file if you're not using it
+exports.onClientEntry = () => {
+    setTimeout(function() {
+      document.body.className = document.body.className.replace(/\bno-scroll\b/, '');
+    }, 4000);
+}
