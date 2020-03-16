@@ -5,7 +5,7 @@ import Logo from "./logo"
 class Hero extends Component {
   render() {
     return (
-      <div className='hero'>
+      <div className='hero'id='home'>
       <div className='box' style={{position:`absolute`, width:`100vw`,
         height:`100vh`, margin:`-20px`,
         overflow:`hidden`,

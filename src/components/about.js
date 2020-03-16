@@ -4,7 +4,7 @@ class About extends Component {
   render() {
     return (
       <div style={{minHeight:`100vh`, display:`flex`, flexDirection:`column`,
-      justifyContent:`center`, padding:`20px`}} className="about-container">
+      justifyContent:`center`, padding:`20px`}} className="about-container" id='about'>
         <div style={{display:`flex`, width:`100%`, justifyContent:`flex-end`}}>
           <div style={{flex:`1`, display:`flex`, alignItems:`flex-end`, flexDirection:`column`}}
           className="about-left">
@@ -16,7 +16,7 @@ class About extends Component {
           </div>
           <div style={{flex:`2`}} className="about-right">
             <div style={{width:`100%`, borderBottom:`2px solid #fff`}}>
-              <h1>&nbsp;Acerca de</h1>
+              <h1>&nbsp;Concepto</h1>
             </div>
             <div className="about-content" style={{maxWidth: `65%`, paddingTop:`3rem`}}>
                 <h4>Marea: la nueva ola es un congreso que busca
@@ -28,8 +28,8 @@ class About extends Component {
 
                 Este proyecto surge a partir de Marea —un colectivo feminista
                 independiente formado por estudiantes del Tecnológico de
-                Monterrey campus Querétaro— y la Sociedad de Alumnas/os
-                de Comunicación.
+                Monterrey campus Querétaro—, la Sociedad de Alumnas/os
+                de Comunicación y el grupo estudiantil Read it.
                 </p>
                 <p>
                 El congreso se llevará a cabo el viernes 27 de marzo del 2020

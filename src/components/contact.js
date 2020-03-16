@@ -2,7 +2,7 @@ import React from "react"
 
 const Contact = () => (
     <div style={{paddingTop:`0rem`, display:`flex`, flexDirection:`column`, justifyContent:`center`}}
-    className="contact-container">
+    className="contact-container" id='contact'>
       <div style={{display:`flex`, width:`100%`, justifyContent:`flex-end`}}>
         <h1 style={{flex:`1`, display:`flex`, justifyContent:`flex-end`}}>04</h1>
         <div style={{flex:`3`}}>

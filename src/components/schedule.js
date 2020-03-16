@@ -2,7 +2,7 @@ import React from 'react'
 import Calendar from './calendar'
 
 const Schedule = () => (
-  <div>
+  <div id='schedule'>
     <div style={{display:`flex`, width:`100%`, justifyContent:`flex-end`}}>
       <h1 style={{flex:`1`, display:`flex`, justifyContent:`flex-end`}}>02</h1>
       <div style={{flex:`3`}}>
